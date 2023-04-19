@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>
+          WEBSITE
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+        <style>
+            .row{
+                width: 450px;
+                margin:10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:50px;
+                }
+                
+     
+            h1 {text-align: center;}
+        </style>
+    </head>
+
+    <body style="background-color: rgb(239, 239, 239);font-family: inter;">
+
+<h1> EMPTY </h1>
+
+
+
+<div class="row">
+
+        <div class="image-container"><img id= img5 src="img/Asset 15.png" height="50"
+            onmouseover= "this.src='img/Asset 16.png';"
+            onmouseout= "this.src='img/Asset 15.png';" /></div>
+
+            <div class="image-container"><img id= img2 src="img/Asset 7@2x.png" height="70" 
+                onmouseover= "this.src='img/Asset 8@2x.png';"
+                onmouseout= "this.src='img/Asset 7@2x.png';"/></div>
+
+            <div class="image-container"><img id= img4 src="img/Asset 11@2x.png" height="50"
+                onmouseover= "this.src='img/Asset 12@2x.png';"
+                onmouseout= "this.src='img/Asset 11@2x.png';" /></div>
+
+  
+</div>
+
+<div class="row">
+    <div class="image-container"><img id= img1 src="img/Asset 5.png"height="50" 
+        onmouseover= "this.src='img/Asset 6.png';"
+        onmouseout= "this.src='img/Asset 5.png';"/></div>
+
+        <div class="image-container"><img id= img3 src="img/Asset 10@2x.png" height="50" 
+            onmouseover= "this.src='img/Asset 9@2x.png';"
+            onmouseout= "this.src='img/Asset 10@2x.png';"/></div>
+
+        <div class="image-container"><img id= img6 src="img/Asset 29@2x.png" height="60"
+            onmouseover= "this.src='img/Asset 28@2x.png';"
+            onmouseout= "this.src='img/Asset 29@2x.png';" /></div>
+    </div>
+
+<div class="row">
+    <div class="image-container"><img id= img7 src="img/Asset 20@2x.png" height="50"
+        onmouseover= "this.src='img/Asset 19@2x.png';"
+        onmouseout= "this.src='img/Asset 20@2x.png';" /></div>
+
+    <div class="image-container"><img id= img8 src="img/Asset 21@2x.png" height="50"
+        onmouseover= "this.src='img/Asset 22@2x.png';"
+        onmouseout= "this.src='img/Asset 21@2x.png';" /></div>
+
+    <div class="image-container"><img id= img9 src="img/Asset 18@2x.png" height="40"
+        onmouseover= "this.src='img/Asset 17@2x.png';"
+        onmouseout= "this.src='img/Asset 18@2x.png';" /></div>
+</div>
+
+<script>
+    var sound1 = new buzz.sound("sound/light.mp3");
+    var sound2 = new buzz.sound("sound/void.mp3");
+    var sound3 = new buzz.sound("sound/click.mp3");
+    var sound4 = new buzz.sound("sound/void.mp3");
+    var sound5 = new buzz.sound("sound/void.mp3");
+    var sound6 = new buzz.sound("sound/light.mp3");
+    var sound7 = new buzz.sound("sound/void.mp3");
+    var sound8 = new buzz.sound("sound/void.mp3");
+    var sound9 = new buzz.sound("sound/void.mp3");
+
+    window.onload = function() {
+        document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+        document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+        document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+        document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+        document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+        document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+        document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+        document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+        document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+    }  
+</script>   
+
+    </body>
+</html>
